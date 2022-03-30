@@ -1,0 +1,665 @@
+/* Global Values */
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #daa521;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Timings section */
+#timings{
+    display: flex;
+    background-color: #353148;
+    width: 90%;
+    /* height: 30px; */
+    color: #d3cdd2;
+    padding: 0% 5%;
+    font-size: 13px;
+}
+#timings>div{
+    padding: 10px;
+    border-left: 0.5px solid #d3cdd27e;
+
+}
+#timings>div:nth-child(2){
+    border-right: 0.5px solid #d3cdd27e;
+
+}
+
+/* Navigation Bar */
+nav{
+    background-color: #89b82c;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+nav>div{
+    width: 100%;
+    padding: 1%;
+}
+
+nav>div:nth-child(1) a{
+    margin-left: 10%;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+nav>div:nth-child(1) span{
+    color: #343143;
+}
+
+nav>div:nth-child(2) a{
+    padding: 1.5%;
+    transition: all .3s ease;
+    
+}
+
+nav>div:nth-child(2) a:hover{
+    background-color: #96be41;    
+}
+
+/* Welcome Poster */
+#poster{
+    display: flex;
+    align-items: center;
+    background-color: #9acd32;
+    padding: 1%;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+#poster>div{
+    width: 100%;
+    color: #343143;
+}
+
+#poster>div:nth-child(1){
+    padding: 0% 4%;
+    width: 60%;
+}
+
+#poster>div:nth-child(1) h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+#poster>div:nth-child(1) p{
+    font-weight: 500;
+}
+
+#poster>div:nth-child(1) a{
+    color: #e4c3c8;
+    background-color: #343143;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin: 0px 5px;
+}
+
+#poster>div>div{
+    margin: 30px 0px;
+}
+
+#poster>div:nth-child(2){
+    width: 90%;
+}
+
+#poster>div:nth-child(2) img{
+    margin-left: 20%;
+    width: 70%;
+}
+
+/* Learn About Us */
+#about{
+    display: flex;
+    width: 90%;
+    margin: 5% auto;
+}
+
+#about>div>div{
+    margin-top: 30px;
+}
+
+#about>div:nth-child(1){
+    width: 85%;
+    padding: 0% 5%;
+}
+
+#about>div:nth-child(1) img{
+    width: 100%;
+}
+
+#about>div:nth-child(2) h1{
+    color: #343143;
+    font-size: 40px;
+}
+
+#about>div:nth-child(2) p{
+    color: #a0844d;
+}
+
+#about>div:nth-child(2) a{
+    color: #e4c3c8;
+    background-color: #343143;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin: 0px 5px;
+}
+
+#flag{
+    display: flex;
+    align-items: center;
+}
+
+#flag>div:nth-child(1),
+#flag>div:nth-child(3){
+    width: 30px;
+    border: .5px solid white;
+}
+
+#flag>div:nth-child(2){
+    color: #343143;
+    padding: 4px 6px;
+    background-color: white;
+}
+
+/* What we do */
+#weDo{
+    width: 90%;
+    text-align: center;
+    margin: 6% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #343143;
+}
+
+#weDo>h1{
+    font-size: 42px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.items>div{
+    display: flex;
+}
+
+.items>div>div{
+    margin: 2%;
+    padding: 3% 1%;
+    transition: all .2s ease-in-out;
+}
+
+.items>div>div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.items>div>div:hover{
+    background-color: #343143;
+    color: #edc7c7;
+}
+
+/* Our Classes */
+#classes{
+    width: 90%;
+    text-align: center;
+    margin: 6% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #343143;
+}
+
+#classes>h1{
+    font-size: 42px;
+}
+
+#classes>div:nth-child(3){
+    display: flex;
+}
+
+#classes>div:nth-child(3)>div{
+    padding: 7px 10px;
+    border: 1px solid #343143;
+    margin: 0px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+#classes>div:nth-child(3)>div:hover{
+    background-color: #343143;
+    color: #e4c3c8;
+}
+
+#teachers{
+    display: flex;
+    flex-direction: column;
+}
+
+#teachers>div{
+    display: flex;
+    text-align: left;
+}
+
+
+#teachers>div>div>div{
+    width: 80%;
+    margin: auto;
+    
+}
+
+#teachers>div>div{
+    border: 1px solid #3431433d;
+    margin: 1.5%;
+}
+
+#teachers>div>div>img{
+    width: 100%;
+}
+
+#teachers>div>div>div>p{
+    font-size: 14px;
+    color: #a28740;
+}
+
+.cnames{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: -25px;
+    
+}
+
+.cnames>img{
+    background-color: #f7c9c9;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.cnames>h4{
+    margin-left: 10%;
+    width: 65%;
+}
+
+.cnames>h2{
+    background-color: #f7c9c9;
+    margin: 0px;
+    float: right;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Discount */
+#discount{
+    width: 60%;
+    margin: 6% auto;
+    text-align: center;
+    color: #343143;
+}
+
+#discount>h1{
+    font-size: 40px;
+    width: 60%;
+    margin: auto;
+}
+#discount>h1 span{
+    font-size: 56px;
+    color:#f12f52
+}
+
+#discount>a{
+    display: inline-block;
+    color: #e4c3c8;
+    background-color: #343143;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin: 0px 5px;
+}
+
+
+
+#package{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #343143;
+}
+
+.bills{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.bills>div{
+    width: 96%;
+    margin: 2%;
+}
+
+.bills>div>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.bills>div>div:nth-child(1){
+    background-color: #f7c9c9;
+    color: #343143;
+}
+
+.bills>div>div:nth-child(2){
+    background-color: white;
+    color: #343143;
+    font-weight: 500;
+}
+
+.bills>div>div:nth-child(2) a{
+    display: inline-block;
+    color: #e4c3c8;
+    background-color: #343143;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin: 20px auto;
+    width: 80px;
+}
+
+.bills>div>div h1{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+hr{
+    width: 90%;
+    margin: 0px auto;
+    border-top: 1px solid #34314338;
+}
+
+.bills>div:nth-child(2)>div a{
+    color: #343143;
+    background-color: #e4c3c8;
+}
+
+.bills>div:nth-child(2)>div:nth-child(1){
+    background-color: #343143;
+    color: #f7c9c9;
+}
+
+/* Testimonials */
+
+#testimonial{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+}
+
+#testimonial>h1{
+    color: #343143;
+}
+
+#people{
+    display: flex;
+}
+#people>div{
+    color: #343143;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+}
+
+#people>div img{
+    width: 100px;
+    border: 10px solid white;
+    border-radius: 60px;
+}
+
+#people>div>div{
+    display: relative;
+    z-index: -199;
+    margin-top: -50px;
+    padding-top: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#people>div>div h4{
+    margin: 0px;
+}
+
+#people>div:nth-child(2)>div{
+    background-color: #343143;
+    color: white;
+}
+
+#testimonial>div:nth-child(4){
+    display: flex;
+}
+
+#testimonial>div:nth-child(4)>div{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: white;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* Yoga Trainer */
+#trainer{
+    color: #343143;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+#trainer>div:nth-child(3){
+    display: flex;
+    margin: 1.5%;
+
+}
+
+#trainer>div:nth-child(3)>div{
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin: 1.5%;
+}
+#trainer>div:nth-child(3)>div img{
+    width: 100%;
+}
+
+/* BLog */
+#blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 3% auto;
+    color: #343143;
+}
+
+#blog>div:nth-child(3){
+    display: flex;
+}
+
+#blog>div:nth-child(3)>div{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5%;
+    border: 1px solid #34314356;
+}
+
+#blog>div:nth-child(3)>div img{
+    width: 100%;
+}
+
+#blog>div:nth-child(3)>div>div{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5%;
+    padding: 5%;
+}
+
+#blog>div:nth-child(3)>div>div h2{
+    margin: 0px;
+}
+
+#blog>div:nth-child(3)>div>div p{
+    color: #a78943;
+    font-size: 14px;
+}
+
+#blog>div:nth-child(3)>div>div a{
+    font-size: 14px;
+    display: inline;
+    font-weight: 600;
+    width: 100px;
+}
+
+#blog>div:nth-child(4){
+    display: flex;
+}
+
+#blog>div:nth-child(4)>div{
+    padding: 20px 26px;
+    margin: 5%;
+    background-color: #343143;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media only screen and (max-width:600px) {
+    #timings{
+        display:none;
+    }
+    nav{
+        position: fixed;
+        background-color: #343143;
+    }
+
+    nav>div:nth-child(1) span{
+    color: inherit;
+}
+
+    #banner{
+        padding: 40% 5%;
+    }
+
+    #address{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=submit]{
+        width: 180px;
+    }
+
+    #links{
+        display: none;
+        position: absolute;
+        top: 65px;
+        flex-direction: column;
+    }
+
+    #links a{
+        /* width: 100%; */
+        padding: 15px;
+        background-color: #343143;
+    }
+
+    #links a:hover{
+        background-color: #676185;
+    }
+
+    #hams{
+        width: 20%;
+        color: white;
+        font-size: 36px;
+    }
+    #poster{
+        padding: 0px 20px;
+    }
+    #poster>div:nth-child(2){
+        display: none;
+    }
+    #poster>div:nth-child(1){
+        padding: 100px 0px;
+        width: 100%;
+    }
+    #poster>div:nth-child(1) h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+    #about{
+    flex-direction: column;
+    margin: 80px 20px;
+    }
+    .items>div{
+        flex-direction: column;
+    }
+    #teachers>div{
+        flex-direction: column;
+    }
+    #discount{
+        margin: 40px auto;
+
+    }
+    #discount,#discount>h1{
+        width: 90%;
+    }
+    .bills{
+        flex-direction: column;
+    }
+    #trainer>div:nth-child(3){
+    flex-direction: column;
+    }
+    #trainer>div:nth-child(3)>div{
+    width: auto;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    #hams{
+        display: none;
+    }
+    #links{
+        display: flex !important;
+    }
+    #links a{
+    padding: 1.5%;
+    transition: all .3s ease;
+    }
+    #links a:hover{
+    background-color: #96be41;;    
+}
+}

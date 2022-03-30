@@ -1,0 +1,267 @@
+/* Global Values */
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #daa521;
+    color: #343143;
+
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+input,textarea{
+    font-family: inherit;
+    outline: none;
+}
+
+
+/* Timings section */
+#timings{
+    display: flex;
+    background-color: #353148;
+    width: 90%;
+    /* height: 30px; */
+    color: #d3cdd2;
+    padding: 0% 5%;
+    font-size: 13px;
+}
+#timings>div{
+    padding: 10px;
+    border-left: 0.5px solid #d3cdd27e;
+
+}
+#timings>div:nth-child(2){
+    border-right: 0.5px solid #d3cdd27e;
+
+}
+
+/* Navigation Bar */
+nav{
+    background-color: #ddb5b5;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+nav>div{
+    width: 100%;
+    padding: 1%;
+}
+
+nav>div:nth-child(1) a{
+    margin-left: 10%;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+nav>div:nth-child(1) span{
+    color: #343143;
+}
+
+nav>div:nth-child(2) a{
+    padding: 1.5%;
+    transition: all .3s ease;
+    
+}
+
+nav>div:nth-child(2) a:hover{
+    background-color: #e1bdbd;    
+}
+
+
+/* Banner */
+#banner{
+    margin: auto;
+    background-color: #f7c9c9;
+    text-align: center;
+    padding: 5%;
+}
+
+#banner h1{
+    font-size: 64px;
+    margin: 0px;
+}
+
+#banner h2{
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#flag{
+    display: flex;
+    align-items: center;
+}
+
+#flag>div:nth-child(1),
+#flag>div:nth-child(3){
+    width: 30px;
+    border: .5px solid white;
+}
+
+#flag>div:nth-child(2){
+    color: #343143;
+    padding: 4px 6px;
+    background-color: white;
+}
+
+#query{
+    margin: 4% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#query>h1{
+    font-size: 42px;
+}
+
+#address{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#address>div{
+    text-align: center;
+    width: 100%;
+    margin: 2%;
+}
+
+#address>div i{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    border-radius: 30px;
+
+}
+
+#address>div p{
+    color: #72613c;
+}
+
+#query form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+input[type=text],textarea{
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    padding-left: 10px;
+    font-family: inherit;
+}
+
+
+textarea{
+    height: 120px;
+}
+
+input[type=submit]{
+    width: 20%;
+    padding: 1.5%;
+    margin: 1%;
+    margin-top: 5%;
+    background-color: #343143;
+    color: #ddb5b5;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Error */
+.error{
+    visibility: hidden;
+    font-size: 12px;
+    margin: 0% 1%;
+    font-weight: 500;
+    color: red;
+}
+
+#results img{
+    width: 60px;
+}
+
+/* Media Queries */
+@media only screen and (max-width:600px) {
+    #timings{
+        display:none;
+    }
+    nav{
+        position: fixed;
+        background-color: #343143;
+    }
+
+    nav>div:nth-child(1) span{
+    color: inherit;
+}
+
+    #banner{
+        padding: 40% 5%;
+    }
+
+    #address{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=submit]{
+        width: 180px;
+    }
+
+    #links{
+        display: none;
+        position: absolute;
+        top: 65px;
+        flex-direction: column;
+    }
+
+    #links a{
+        /* width: 100%; */
+        padding: 15px;
+        background-color: #343143;
+    }
+
+    #links a:hover{
+        background-color: #676185;
+    }
+
+    #hams{
+        width: 20%;
+        color: white;
+        font-size: 36px;
+    }
+
+
+}
+
+@media only screen and (min-width:600px) {
+    #hams{
+        display: none;
+    }
+    #links{
+        display: flex !important;
+    }
+    #links a{
+    padding: 1.5%;
+    transition: all .3s ease;
+    }
+    #links a:hover{
+    background-color: #e1bdbd;    
+}
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21e3002bb4.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yooga - Practice for good health</title>
+</head>
+
+<body>
+    <div id="timings">
+        <div><i class="far fa-clock"></i> 8:00 - 9:00 Mon - Sat</div>
+        <div><i class="fas fa-phone-alt"> </i> +91 9992224444 For Appointment</div>
+    </div>
+    <nav>
+        <div id="logo">
+            <a href="./Home.html">Y<span>oo</span>GA</a>
+        </div>
+        <div id="hams"><i onclick="ham()" class="fa fa-bars"></i></div>
+        <div id="links">
+            <a href="./Home.html">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SERVICE</a>
+            <a href="">PRICE</a>
+            <a href="">CLASS</a>
+            <a href="">TRAINER</a>
+            <a href="./Contact.html">CONTACT</a>
+        </div>
+    </nav>
+    <div id="banner">
+        <h1>Contact</h1>
+        <h2>Home / Contact</h2>
+    </div>
+    <div id="query">
+        <div>
+            <div id="flag">
+                <div></div>
+                <div>Get in Touch</div>
+                <div></div>
+            </div>
+        </div>
+
+        <h1>For Any Query</h1>
+        <div id="address">
+            <div>
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <h2>Location</h2>
+                <p>123 Street, New York; USA</p>
+            </div>
+            <div>
+                <div><i class="fas fa-phone-alt"></i></div>
+                <h2>Phone</h2>
+                <p>+012 345 67890</p>
+            </div>
+            <div>
+                <div><i class="far fa-envelope"></i></div>
+                <h2>Email</h2>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <form onsubmit="validate(event)">
+            <input oninput="inputCheck('1')" id="name" type="text" placeholder="Your Name">
+            <div class="error" id="error1">* Please enter a Valid Name</div>
+            <input oninput="inputCheck('2')" id="email" type="text" placeholder="Your Email">
+            <div class="error" id="error2">* Please enter a Valid Email</div>
+            <input oninput="inputCheck('3')" id="subject" type="text" placeholder="Subject">
+            <div class="error" id="error3">* This Field is mandatory</div>
+            <textarea oninput="inputCheck('4')" id="message" placeholder="Message"></textarea>
+            <div class="error" id="error4">* This Field is mandatory</div>
+            <div><input type="submit" value="Send Message"><span id="results"></span></div>
+        </form>
+    </div>
+    <script src="./Contact.js"></script>
+
+</body>
+
+</html>
